@@ -10,7 +10,7 @@ function randomPer(){
 }
 
 function randomLightPer(){
-  let thisOutput = Math.random() * 60 + 40 ;
+  let thisOutput = Math.random() * 60 + 1 ;
   return thisOutput ;
 }
 
@@ -19,6 +19,10 @@ $(document).ready(function() {
   let first = randomPer() + "%";
   let second = "95" + "%";
   second = randomPer() + "%";
+
+  first = "50%";
+  second = "50%";
+
   var new_bgcolor = "hsl("+ randomColor() +", "+ first +", "+ second +")";
   var new_textcolor = "hsl("+ randomColor() +", "+ first +", "+ second +")";
   var new_bordercolor = "hsl("+ randomColor() +", "+ first +", "+ second +")";
