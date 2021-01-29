@@ -9,19 +9,16 @@ function randomPer(){
   return thisOutput ;
 }
 
+function randomLightPer(){
+  let thisOutput = Math.random() * 60 + 40 ;
+  return thisOutput ;
+}
+
 $(document).ready(function() {
 
   let first = randomPer() + "%";
   let second = "95" + "%";
-  second = randomPer() ;
-  if (second < 50){
-    second = second + 5 ;
-  }else{
-    second = second - 5 ;
-  }
-
-  second = second + "%" ;
-
+  second = randomPer() + "%";
   var new_bgcolor = "hsl("+ randomColor() +", "+ first +", "+ second +")";
   var new_textcolor = "hsl("+ randomColor() +", "+ first +", "+ second +")";
   var new_bordercolor = "hsl("+ randomColor() +", "+ first +", "+ second +")";
